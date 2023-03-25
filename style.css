@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #89b58b;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px;
+  color: #074d1c;
+}
+
+
+section {
+  background: #509153;
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted #074d1c;
+  width: 300px;
+}
+
+article {
+  background: #509153;
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted #2ba750;
+  width: 200px;
+}
+
+#container {
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+main {
+  margin: 10px;
+}
+
+aside {
+  padding: .5rem;
+  margin: .5rem; 
+  border: 1px dotted rgb(75, 153, 92);
+  color: #074d1c;
+}
+
+h1, h2, h3{
+  text-aligh: center;
+}
+
+nav {
+  background-color: #074d1c;
+  margin: 10px 10px 0px 10px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: block;
+  border:#074d1c;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #074d1c;
+  text-transform: uppercase;
+}
+
+li.selected {
+  background-color:rgb(53, 175, 118);
+}
+
+a:link,
+a:visited {
+    color:rgb(22, 180, 56);
+    text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  color:rgb(35, 107, 50);
+  text-decoration: none;
+}
+
+footer {
+  background-color:rgb(30, 92, 43);
+  text-align: center;
+  padding: 15px;
+  margin: 0px 10px 10px 10px;
+  font-weight: bold;
+  color:#074d1c;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.social-icons > li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+ }
+ 
+ .social-icons a {
+  position: relative;
+  background-color: #0ed1b7;
+  display: block;
+  user-select: none;
+  transition: background-color .3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: .25rem;
+ }
+
+ .social-icons a:hover {
+  background-color: #0ed1b7;
+ }
+
+ .social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: .65rem;
+  top: .65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+ }
+
+ .social-icons .social-icon-tw::before {
+  background-image: url("images/icon-twitter.png");
+ }
+
+ .photo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+ }
